@@ -1,0 +1,504 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  
+}
+
+body{
+    margin: 0;
+    background-color: #f8f8fa ;
+    position: relative;
+}
+
+header{
+    background-color: #4516fe;
+    color: #fff;
+    margin: 0;
+    top: 0;
+    height: 60vh;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    right:0;
+    
+    height: ;
+    color: #fff;
+    padding:40px 40px;
+
+}
+
+.nav-item{
+    margin: 0 30px;
+}
+
+.nav-item-active{
+    background-color: #fff;
+    color: #4516fe;
+    padding: 2px 4px;
+}
+
+.nav-search{
+    margin: auto 10px auto 30px;
+    height: 25px;
+    width: 20px;
+}
+
+.header-bg{
+    
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 40px 40px 40px 100px;
+}
+
+.header-text{
+    margin: 80px 100px;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.header-text>h2{
+    margin:0;
+}
+.header-text>p{
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+    opacity: .9;
+}
+
+.header-img-container{
+
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.header-image{
+    right: 0;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.companies{
+    color: #000;
+    padding: 20px auto 10px 100px;
+    background-color: #f8f8fa;
+    margin: 20px auto 0px 80px;
+
+}
+
+
+.company-items{
+    all: unset;
+    color:#000;
+    font-weight:900;
+    margin: 100px 30px;
+    font-size: 1.5rem;
+
+
+}
+
+
+
+
+
+/* API CSS  */
+
+.api{
+    padding: 20px 20px 20px 40px;
+    background-color: #f8f8fa;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    position: relative;
+}
+
+
+.card-active{
+    background-color: #fff;
+ 
+}
+
+.last-card{
+    display: inline;
+    
+}
+.cards::after{
+ content: ">";
+position: absolute;
+right: 0;
+margin-top: 40px;
+margin-right: 70px;
+
+font-size: 2.5rem;
+font-weight: lighter;
+background-color:#4516fe ;
+color: #fff;
+padding: 2px 20px;
+border-radius: 100px;
+
+
+}
+
+.card{
+    margin: 0 10px;
+    padding: 30px 10px;
+    border-radius: 20px;
+
+
+}
+
+.card-head{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOG SECTION CSS */
+
+.blog-section{
+    padding: 20px 20px 50px 40px;
+    background-color: #f8f8fa;
+}
+
+.blog-cards{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #f8f8fa;
+
+}
+
+/* .blog-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    
+} */
+
+.blog-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items:;
+    
+    
+}
+
+.blog-card-right{
+    display: inline flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    background-color: #fff;
+    margin: 0;
+    padding: 0px 40px 0px;
+    width: 30%;
+
+
+}
+
+.blog-content>h6{
+    color: #7351fd;
+    font-weight: 950;
+    font-size: 1rem;
+
+}
+
+.blog-content>h3{
+    color:#000;
+    font-weight:bold;
+    
+
+}
+
+.blog-content>small{
+    color:#000;
+    font-weight:bold;
+    width:500px;
+
+}
+
+
+.author-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+    margin:10px auto 0px auto;
+    z-index: 2;
+}
+.blog-bottom{
+    position: relative;
+    display: inline;
+    margin-right: 200px;
+}
+.blog-card-bottom-image{
+    position: absolute;
+    margin: 40px 0px 0px 0px;
+
+
+
+}
+.blog-author-container{
+    position: relative;
+    display: inline-block;
+}
+
+.blog-author{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 55px;
+    width: 100%;
+}
+.bg-white{
+    /* display: flex;
+    flex: .5;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    /* display: inline-block;
+    background-color: #fff; */
+}
+.blog-content-container{
+    display: inline;
+}
+.blog-image-container{
+    display: inline;
+    margin-right:0;
+    margin:0;
+    width: 30%;
+}
+
+.blog-img{
+    height:45vh ;
+}
+
+
+
+
+
+
+
+/* FAQ SECTION */
+
+.faq-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px 0px 30px 40px;
+    position: relative;
+    background-color: #e9edff;
+}
+
+.faq-image{
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+.faq-btn{
+    all: unset;
+    background-color:#5a31fc;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color:#fff;
+}
+
+.faq-content>h2{
+    all: unset;
+    font-size: 3rem;
+    margin: 0;
+    font-weight:950;
+    
+    line-height: 1;
+}
+
+.faq-content h4:nth-of-type(1){
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* DOWNLOAD SECION CSS */
+
+
+.download-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    place-self:center;
+    
+    padding: 100px 0;
+    background-color:white ;
+}
+
+.download-email{
+   
+    background-color:#fff ;
+    height: ;
+    
+}
+
+.download-email >form{
+    background-color:;
+}
+
+.download-email >form>input{
+    all: unset;
+    background-color:#e9edff;
+    color: #000;
+    padding: 10px 80px;
+    border-radius: 30px;
+}
+.form{
+    background-color:#e9edff;
+    height: ;
+    border-radius:20px;
+
+}
+
+.form-text::placeholder{
+    color: #000;
+}
+
+
+
+.download-email >form>button{
+    all: unset;
+    background-color:#5a31fc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color:#fff;
+}
+
+
+/* .download-margin{
+    margin: 0 00px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer-logo{
+    width: 30%;
+    margin: 0 ;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-section{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    align-items:s;
+    justify-content: space-between;
+    background-color: #4718fe;
+    color: #fff;
+    height: 30vh;
+    bottom: 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.list-items{
+    margin: 0 10px;
+}
+
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:center;
+    padding: 0 20px;
+
+}
+
+
+.footer-logos{
+    margin:10px
+}
+
+.pipe-style::after{
+    content: '|';
+    margin: 10px;
+}
