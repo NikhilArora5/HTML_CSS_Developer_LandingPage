@@ -404,6 +404,7 @@ border-radius:500px;
 
 .faq-content h4:nth-of-type(1){
     opacity: .8;
+    
 }
 
 
@@ -1681,6 +1682,78 @@ width: 100%;
 
 
 
+}
+
+
+
+
+
+
+
+
+/* faq */
+
+.faq-content>h4{
+    font-size: 12px;
+    font-weight: 500;
+}
+/* download */
+
+.download-section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    place-self:center;
+    
+    padding: 100px 0;
+    background-color:white ;
+}
+
+.download-email{
+   
+    background-color:#fff ;
+    /* height: ; */
+    
+}
+
+#now{
+    font-weight: 400
+}
+
+.download-email >form>input{
+   
+    padding: 10px 10px;
+   
+}
+
+
+
+.download-email >form>input{
+    all: unset;
+    background-color:#e9edff;
+    color: #000;
+    
+    
+}
+.form{
+    background-color:#e9edff;
+    height: ;
+    border-radius:20px;
+
+}
+
+.form-text::placeholder{
+    color: #000;
+}
+
+
+
+.download-email >form>button{
+    all: unset;
+    background-color:#5a31fc;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color:#fff;
 }
 
 
