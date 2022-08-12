@@ -5,45 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Landing Page</title>
+   
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    
+
+
+    <!-- MY CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Starts -->
     <header>
+        <div id="navigation-cp">
+
+
+
+            <div onclick="onClickMenu()" id="cp-menu">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="m-cp-nav" id="nav-cp">
+                <a href="#home-id">Home</a>
+                <a href="#api-id">ApIs</a>
+                <a href="#blog-id">Blogs</a>
+                <a href="#forum-id">Forums</a>
+                <div class="cp-btns">
+                    <a href="#">Log in</a>
+                    <a href="#">Sign UP</a>
+
+                </div>
+                
+            </ul>
+            
+        </div>
         <!-- Navigation Bar Starts -->
-        <nav class="header-bg">
+        <nav class="header-bg" id="home-id">
+            <div class="logo-cont">
+            <img class="logo" src="./images/Logo.png" >
+            
+            </div>
+            
             <!-- Navigation items Starts -->
-            <a class="nav-item">Home</a>
-            <a class="nav-item">APIs</a>
-            <a class="nav-item">Blogs</a>
-            <a class="nav-item">Forums</a>
+           <div class="nav-list">
+            <a class="nav-item" href="#home-id">Home</a>
+            <a class="nav-item"  href="#api-id">APIs</a>
+            <a class="nav-item" href="#blog-id">Blogs</a>
+            <a class="nav-item" href="#forum-id">Forums</a>
             <a class="nav-item">LogIn</a>
             <a class="nav-item-active">Sign Up</a>
             <svg class="nav-item nav-search" width="15" height="15" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85903 8.24401L11.816 11.321L11.815 11.322C11.991 11.4877 12.0614 11.7369 11.9982 11.9703C11.9349 12.2036 11.7483 12.3831 11.5127 12.4372C11.2771 12.4914 11.0308 12.4113 10.872 12.229L7.89103 9.12901C7.04998 9.72236 6.04531 10.0397 5.01603 10.037C2.66419 10.0372 0.627975 8.40344 0.118589 6.10743C-0.390797 3.81142 0.763438 1.46979 2.89472 0.475412C5.02599 -0.518963 7.56198 0.100953 8.99418 1.96641C10.4264 3.83187 10.3702 6.44192 8.85903 8.24401ZM8.44412 3.59725C7.86941 2.21135 6.51636 1.3082 5.01603 1.30901C2.9693 1.31231 1.31123 2.97128 1.30903 5.01801C1.30903 6.51834 2.21291 7.8709 3.59912 8.44487C4.98532 9.01883 6.58078 8.70114 7.64139 7.63996C8.702 6.57878 9.01883 4.98314 8.44412 3.59725Z" fill="white"/>
             </svg>
+        </div>
         </nav>
 
+
+        <!-- NAVIGATION_CP -->
+        
+
         <!-- LOGO -->
-        <div class="header-bg">
-            <img class="logo" src="./images/Logo.png" >
-        </div>
+        <!-- <div class="header-bg">
+           
+        </div> -->
+<div class="hero-section sec-lf-mg">
+   
 
+    <div class="hero-text header-bg">
+        <img class="rect" src="./images/Rectangle_12.png">
+        <h2>
+            Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+    </div>
+
+    <!-- Image -->
+    
+        <img class="header-image" src="./images/IMAGE HERE.png">
+    
+</div>
         <!-- Text -->
-        <div class="header-text header-bg">
-            <img src="./images/Rectangle_12.png">
-            <h2>
-                Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-
-        <!-- Image -->
-        <div class="header-bg header-img-container">
-            <img class="header-image" src="./images/IMAGE HERE.png">
-        </div>
+        
     </header>
     <!-- Companies -->
     <div class="companies">
@@ -53,8 +102,8 @@
     </div>
 
     <!-- API Section -->
-    <div class="api">
-        <h1 class="api-heading">APIs <br> by category</h1>
+    <div class="api sec-lf-mg" id="api-id"> 
+        <h1 class="api-heading hd">APIs  by category</h1>
     <!-- Cards -->
         <div class="cards">
             <!-- Card 01 -->
@@ -93,14 +142,14 @@
 
     <!-- Blog section -->
 
-    <div class="blog-section">
+    <!-- <div class="blog-section">
         <div class="blog-heading">
-            <h1>Latest <br> blog article</h1>
-    </div>
+            <h1>Latest  blog article</h1>
+    </div> -->
         <!-- Blogs -->
-    <div class="blog-cards">
+    <!-- <div class="blog-cards"> -->
             <!-- Blog card 01 -->
-        <div class="blog-card">
+            <!-- <div class="blog-card">
                 <div class="blog-image-container">
                     <img class="blog-img" src="./images/Rectangle.png" alt="" >
                 </div>
@@ -125,12 +174,12 @@
                 </div>
                 
                 
-            </div>
+            </div> -->
     
             <!-- Blog card 02 -->
     
-            <div class="bg-white">
-                <div class="blog-card">
+            
+                <!-- <div class="blog-card">
                     <div class="blog-image-container">
                         <img  class="blog-img" src="./images/Rectangle Copy.png" alt="" >
                     </div>
@@ -154,32 +203,92 @@
                     
                     
                 </div>
-            </div>
+        
            
         </div>
 
-    </div>
+    </div> -->
     
+
+    <!-- Article sec -->
+
+
+    <section class="article-sec sec-lf-mg" id="blog-id">
+
+        <div class="art-sec-hd-cont">
+            <h1 class="article-hd hd">Latest Blog article</h1>
+            <h5 class="see-all">See all articles</h5>
+        </div>
+
+
+        <div class="article-cards">
+            <div class="article-card">
+
+                <img src="/images/Rectangle.png" alt="" class="article-img">
+
+                <div class="aritcle-ct">
+                    <h6 class="date">06 Aug 2019</h6>
+                    <h2 class="aritcle-name">Custom-made Loyalty Program</h2>
+                    <p class="article-about">
+                        Lorem ipsum dolor sit amet, consectetur ‘iipiscing elt. Morbi justo metus, euismod quis lorem ornare, convallis solictudin
+neque.
+                    </p>
+                <div class="article-btm-ct">
+                    <img src="/images/IMAGE HERE (2).png" alt="" class="circle-img">
+                    <h5 class="author-name">Booby Wagonr</h5>
+                </div>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="article-card">
+
+                <img src="/images/Rectangle Copy.png" alt="" class="article-img">
+
+                <div class="aritcle-ct">
+                    <h6 class="date">06 Aug 2019</h6>
+                    <h2 class="aritcle-name">Custom-made Loyalty Program</h2>
+                    <p class="article-about">             
+Lorem ipsum dolor sit amet, consectetur ‘iipiscing elt. Morbi justo metus, euismod quis lorem ornare, convallis solictudin
+neque. Mautis sit amet congue metus,ut pharetra lectus
+                    </p>
+
+                    <div class="article-btm-ct">
+                        <img src="/images/IMAGE HERE (2).png" alt="" class="circle-img">
+                        <h5 class="author-name">Booby Wagonr</h5>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+    </section>
+
+
     
 
         <!-- FAQ SECTION -->
         <div class="faq-section">
             <div class="faq-content">
-                <h2>Have <br> a question</h2>
+                <h2 class="hd">Have  a question</h2>
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia <br>nam animi exercitationem et eum enim nulla veritatis,</h4>
                 <h4>Do you have any question about anythings ?</h4>
 
                 <button class="faq-btn" >Contact Us</button>
             </div>
-            <div class="faq-image">
-                <img src="./images/Rectangle_38-2 (1).png" alt="">
-            </div>
+   
+                <img  class="faq-image" src="./images/Rectangle_38-2 (1).png" alt="">
+           
         </div>
 
         <!-- Download -->
-        <div class="download-section">
+        <div class="download-section" id="forum-id">
             <div class="download-content download-margin ">
-                <h1>Download <span> Now</span></h1>
+                <h1 class="download-hd">Download <span id="now"> Now</span></h1>
             </div>
              <div class="download-email download-margin">
                 <form class="form">
@@ -216,5 +325,10 @@
             </div>
             
         </div>
+
+
+        <div class="my-contact">
+             <h6 class="designed-by">Designed by <a href="https://www.linkedin.com/in/nikhilarora6541b91a4/">Nikhil Arora</a></h6> </div>
+        <script src="/script.js"></script>
 </body>
 </html>
