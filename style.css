@@ -1734,16 +1734,25 @@ width: 100%;
     color: #000;
     
     
+
+
 }
+
+
 .form{
     background-color:#e9edff;
     height: ;
     border-radius:20px;
+    width: 100%;
+    text-align: center;
+    
 
 }
 
 .form-text::placeholder{
     color: #000;
+    font-size: 14px;
+    margin: 0 auto;
 }
 
 
@@ -1754,6 +1763,7 @@ width: 100%;
     padding: 10px 10px;
     border-radius: 20px;
     color:#fff;
+    font-size: 14px;
 }
 
 
